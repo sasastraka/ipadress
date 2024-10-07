@@ -28,7 +28,6 @@ class AddressIPv4:
         first, second = map(int, self.address.split('.')[:2])
         return (first == 10) or (first == 172 and 16 <= second <= 31) or (first == 192 and second == 168)
 
-# Demonstrace
 if __name__ == "__main__":
     address = AddressIPv4("192.168.1.1")
     
